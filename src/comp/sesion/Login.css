@@ -1,0 +1,65 @@
+form {
+  background-color: #1a1a2e; /* azul oscuro casi negro */
+  color: #f72585; /* fucsia fuerte */
+  padding: 3.5rem 2rem; /* más espacio arriba y abajo */
+  max-width: 350px;
+  margin: 4rem auto; /* más margen arriba y abajo */
+  border-radius: 10px;
+  box-shadow: 0 0 10px #f72585aa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box; /* para que el padding no aumente el ancho */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  display: block;
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.3rem; /* un poco más de espacio debajo */
+  border: 2px solid #4a0c57; /* fucsia oscuro */
+  border-radius: 6px;
+  background-color: #2e2e42; /* fondo input oscuro */
+  color: #f72585;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box; /* para que padding no afecte al ancho */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  border-color: #f72585;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  background-color: #f72585;
+  border: none;
+  padding: 0.9rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #d81e70;
+}
+
+p {
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+}

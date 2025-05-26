@@ -1,0 +1,183 @@
+/* ✅ Eliminar scroll y espacios en blanco */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden; /* ✅ Eliminar scroll horizontal */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #0d1117; /* ✅ Fondo oscuro consistente */
+}
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  width: 100vw; /* ✅ Ancho completo del viewport */
+  overflow: hidden; /* ✅ Prevenir cualquier overflow */
+}
+
+/* ✅ HERO SECTION - Ocupar todo el espacio disponible */
+.hero {
+  display: flex;
+  align-items: center; /* ✅ Centrar verticalmente */
+  justify-content: flex-start; /* ✅ Alinear contenido a la izquierda */
+  padding: 0; /* ✅ Sin padding para ocupar todo el espacio */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw; /* ✅ Ancho completo */
+  height: calc(100vh - 80px - 60px); /* ✅ Altura completa menos navbar y footer aproximados */
+  min-height: 500px; /* ✅ Altura mínima */
+  position: relative;
+}
+
+/* ✅ Contenido del hero alineado a la izquierda */
+.hero-content {
+  position: absolute; /* ✅ Posicionar sobre la imagen */
+  left: 60px; /* ✅ Margen desde la izquierda */
+  top: 50%; /* ✅ Centrar verticalmente */
+  transform: translateY(-50%); /* ✅ Ajustar centrado vertical */
+  max-width: 500px; /* ✅ Ancho máximo para legibilidad */
+  z-index: 2; /* ✅ Sobre la imagen */
+  text-align: left; /* ✅ Alinear texto a la izquierda */
+}
+
+.hero-content h3 {
+  color: #8e1654;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #000;
+  line-height: 1.2;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* ✅ Sombra para legibilidad */
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* ✅ Sombra para legibilidad */
+}
+
+.shop-btn {
+  padding: 15px 30px;
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.shop-btn:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ✅ Responsive para tablets */
+@media (max-width: 1024px) {
+  .hero {
+    height: calc(100vh - 70px - 50px); /* ✅ Ajustar para tablets */
+  }
+  
+  .hero-content {
+    left: 40px;
+    max-width: 450px;
+  }
+  
+  .hero-content h1 {
+    font-size: 40px;
+  }
+  
+  .hero-content h3 {
+    font-size: 18px;
+  }
+  
+  .hero-content p {
+    font-size: 16px;
+  }
+}
+
+/* ✅ Responsive para móviles */
+@media (max-width: 768px) {
+  .hero {
+    height: calc(100vh - 60px - 40px); /* ✅ Ajustar para móviles */
+    background-position: center right; /* ✅ Mejor posición en móvil */
+  }
+  
+  .hero-content {
+    left: 20px;
+    right: 20px;
+    max-width: none;
+    width: calc(100% - 40px);
+  }
+  
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  
+  .hero-content h3 {
+    font-size: 16px;
+  }
+  
+  .hero-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .shop-btn {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}
+
+/* ✅ Responsive para móviles pequeños */
+@media (max-width: 480px) {
+  .hero {
+    height: calc(100vh - 50px - 30px);
+  }
+  
+  .hero-content {
+    left: 15px;
+    right: 15px;
+    width: calc(100% - 30px);
+  }
+  
+  .hero-content h1 {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+  
+  .hero-content h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .hero-content p {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+  
+  .shop-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}

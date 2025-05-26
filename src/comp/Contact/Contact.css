@@ -1,0 +1,55 @@
+.contact-container {
+  background-color: #1a1a2e; /* fondo azul oscuro casi negro */
+  color: #f72585; /* fucsia fuerte */
+  padding: 3rem 2rem;
+  max-width: 600px;
+  margin: 4rem auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #f72585aa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-size: 2.2rem;
+}
+
+.contact-container h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #f72585;
+  padding-bottom: 5px;
+}
+
+.contact-container p {
+  font-size: 1.1rem;
+  margin-bottom: 1.3rem;
+}
+
+.contact-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-container ul li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.social-links li a {
+  color: #f72585;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+  color: #d81e70;
+  text-decoration: underline;
+}
